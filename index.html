@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background: linear-gradient(to right, #01A9CD, #01E5AC);
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .form-div {
+        width: 30em;
+        height: 85vh;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 23px 40px;
+    }
+
+    h1 {
+        color: #01A9CD;
+    }
+
+    .signup {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 17px;
+    }
+
+    input {
+        width: 100%;
+        height: 40px;
+        padding: 10px;
+        border: none;
+        border-bottom: 2px solid #01A9CD;
+        outline: none;
+    }
+
+    input[type=checkbox] {
+        height: 20px;
+        width: 15px;
+    }
+
+    input[type=submit] {
+        background: linear-gradient(to right, #01A9CD, #01E5AC);
+        color: white;
+        border: none;
+        font-size: 17px;
+    }
+
+    .check-box {
+        display: flex;
+        gap: 5px;
+    }
+
+    .button {
+        width: 60%;
+    }
+</style>
+
+<body>
+
+    <form action="" method="" class="form-div">
+        <h1>Registration Form.</h1>
+        <div class="signup">
+            <div class="name">
+                <input type="text" name="name" placeholder="Name" id="">
+            </div>
+            <div class="email">
+                <input type="email" name="email" placeholder="Email address" id="">
+            </div>
+            <div class="country">
+                <input type="text" name="country" placeholder="Country" id="">
+            </div>
+            <div class="phone-number">
+                <input type="number" name="phoneNumber" placeholder="Phone" id="">
+            </div>
+            <div class="password">
+                <input type="password" name="password" placeholder="Password" id="">
+            </div>
+
+        </div>
+        <div class="check-box">
+            <input type="checkbox" name="checkBox" id="">
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore dolorem aut atque molestias libero ad quasi officiis!</span>
+        </div>
+
+        <div class="button">
+            <input type="submit" name="submit" value="CREATE ACCOUNT">
+        </div>
+        <p>Already have an account? <span><a href="./index2.html" style="color:#01A9CD; text-decoration:none;">Sign in</a></span></p>
+    </form>
+</body>
+
+</html>
